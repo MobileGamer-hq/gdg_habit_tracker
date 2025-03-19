@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:gdg_habit_tracker/constants/colors.dart';
 import 'package:gdg_habit_tracker/constants/images.dart';
+import 'package:gdg_habit_tracker/routes/route.dart';
+import 'package:gdg_habit_tracker/widgets/button_fill.dart';
 
 class LandingScreen extends StatelessWidget {
   const LandingScreen({super.key});
@@ -49,21 +51,18 @@ class LandingScreen extends StatelessWidget {
                   child: Column(
                     children: [
                       //Button
-                      SizedBox(
-                        width: double.infinity,
-                        height: 40,
-                        child: ElevatedButton(
-                          onPressed: () {},
-                          child: Text('Sign In'),
-                        ),
-                      ),
+                      ButtonFill(
+                          onPressed: () =>
+                              Navigator.pushNamed(context, AppRoutes.signin),
+                          text: 'Sign In'),
 
                       //Register
                       SizedBox(
                         width: double.infinity,
                         height: 40,
                         child: TextButton(
-                          onPressed: () {},
+                          onPressed: () =>
+                              Navigator.pushNamed(context, AppRoutes.signup),
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
