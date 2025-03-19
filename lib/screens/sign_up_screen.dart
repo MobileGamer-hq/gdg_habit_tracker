@@ -84,11 +84,11 @@ class SignUpScreen extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Text(
-                              'Don’t have an account?',
+                              'Already have an account?',
                               style: TextStyle(color: Colors.black),
                             ),
                             Text(
-                              ' Register now!',
+                              ' Get in now!',
                               style: TextStyle(color: Colors.blue),
                             ),
                           ],
